@@ -1,0 +1,32 @@
+.navigation-bar{
+    height: 80px;
+    background-color: lavender;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-app-name{
+    align-self: center;
+    font-size: 27px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.log-out-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 0px;
+    align-self: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}

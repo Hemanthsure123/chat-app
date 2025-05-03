@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { ChatContext } from '../context/ChatContext';
+import "./RoomList.css"
 
 const RoomList = () => {
   const { rooms, fetchChatData, joinChat } = useContext(ChatContext);
@@ -25,25 +26,25 @@ const RoomList = () => {
   };
 
   return (
-    <div className="p-4">
-      <h3 className="font-bold mb-2">Public Rooms</h3>
-      <form onSubmit={handleCreateRoom} className="mb-4">
+    <div className="public-rooms">
+      <h3 className="public-heading">Public Rooms</h3>
+      <form onSubmit={handleCreateRoom} className="public-form">
         <input
           type="text"
           value={newRoomName}
           onChange={(e) => setNewRoomName(e.target.value)}
           placeholder="New room name"
-          className="mr-2"
+          className="public-input"
         />
-        <button type="submit">Create Room</button>
+        <button type="submit" className='room-btn'>Create Room</button>
       </form>
       {rooms.map((room) => (
         <div
           key={room.id}
           onClick={() => joinChat('room', room.id)}
-          className="cursor-pointer p-2 hover:bg-gray-100"
+          className="all-rooms"
         >
-          {room.name}
+          <p className='all-room-names' >{room.name}</p>
         </div>
       ))}
     </div>

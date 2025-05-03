@@ -1,0 +1,50 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #282828;
+    width: 500px;
+    border: 0px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 150px;
+    height: 400px;
+}
+
+.login-heading{
+    color: lavender;
+    font-size: 40px;
+    font-weight:bold;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 40px;
+}
+
+.email-text{
+    color: lavenderblush;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.login-button{
+    width: 100px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    color: lavender;
+    background-color: lightcoral;
+    margin-top: 12px;
+    margin-left: 36px;
+    cursor: pointer;
+}

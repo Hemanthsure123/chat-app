@@ -2,6 +2,8 @@ import { useState, useEffect, useRef, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { ChatContext } from '../context/ChatContext';
 import { AuthContext } from '../context/AuthContext';
+import './ChatWindow.css'
+
 
 const ChatWindow = () => {
   const { user } = useContext(AuthContext);
@@ -51,10 +53,14 @@ const ChatWindow = () => {
     mentionUser(userId);
   };
 
-  if (!currentChat) return <div className="chat-window">Select a chat to start messaging</div>;
+  if (!currentChat) return (
+  <div className="no-chatting-window">
+    <p className='no-chat'>Select a chat to start messaging</p>
+  </div>
+  )
 
   return (
-    <div className="chat-window">
+    <div className="chatting-window">
       <div className="messages">
         {messages.map((msg) => (
           <div
@@ -109,7 +115,7 @@ const ChatWindow = () => {
           value={content}
           onChange={handleTyping}
           placeholder="Type a message (use Markdown for formatting)"
-          className="flex-1"
+          className="chatting-input"
         />
         <button type="submit">{editingMessage ? 'Update' : 'Send'}</button>
         {editingMessage && (

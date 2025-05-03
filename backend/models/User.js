@@ -19,3 +19,9 @@ User.prototype.matchPassword = async function (password) {
 };
 
 module.exports = User;
+
+
+
+
+
+

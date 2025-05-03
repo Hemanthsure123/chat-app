@@ -1,0 +1,27 @@
+.users-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #282828;
+}
+
+.online-users-heading{
+    color: lavender;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.online-users{
+    color: lavender;
+    background-color: orangered;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.each-online{
+    width: 120px;
+    margin: 10px;
+    margin-bottom: 20px;
+}

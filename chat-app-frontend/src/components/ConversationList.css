@@ -1,0 +1,48 @@
+.private-conversations{
+    min-height: 300px;
+    max-height: 1200px;
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 14px;
+}
+
+.private-heading{
+    color: lavender;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.private-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.private-dropdown{
+    width: 80%;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: lavenderblush;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.private-button{
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    color: black;
+    background-color: lavenderblush;
+    cursor: pointer;
+}
+
+.private-button:hover{
+    background-color: lightskyblue;
+}
+
+

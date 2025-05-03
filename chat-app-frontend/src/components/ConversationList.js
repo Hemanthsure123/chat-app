@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { ChatContext } from '../context/ChatContext';
 import UserList from './UserList';
 import { toast } from 'react-toastify';
+import "./ConversationList.css"
 
 const ConversationList = () => {
   const { conversations, fetchChatData, joinChat, onlineUsers } = useContext(ChatContext);
@@ -39,13 +40,13 @@ const ConversationList = () => {
     }
   };
   return (
-    <div className="p-4">
-      <h3 className="font-bold mb-2">Private Conversations</h3>
-      <form onSubmit={handleStartConversation} className="mb-4">
+    <div className="private-conversations">
+      <h3 className="private-heading">Private Conversations</h3>
+      <form onSubmit={handleStartConversation} className="private-form">
         <select
           value={selectedUserId}
           onChange={(e) => setSelectedUserId(e.target.value)}
-          className="mr-2 p-2 border rounded"
+          className="private-dropdown"
         >
           <option value="">Select a user</option>
           {Object.keys(onlineUsers).map((userId) => (
@@ -54,7 +55,7 @@ const ConversationList = () => {
             </option>
           ))}
         </select>
-        <button type="submit">Start Chat</button>
+        <button type="submit" className='private-button' >Start Chat</button>
       </form>
       {conversations.map((conv) => (
         <div

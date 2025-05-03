@@ -16,3 +16,6 @@ Message.belongsTo(Room, { as: 'room', allowNull: true });
 Message.belongsTo(Conversation, { as: 'conversation', allowNull: true });
 
 module.exports = Message;
+
+
+

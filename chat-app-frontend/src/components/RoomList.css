@@ -1,0 +1,77 @@
+.public-rooms{
+    background-color: lavenderblush;
+    min-height: 300px;
+    border: 2px solid lavender;
+    border-radius: 14px;
+    max-height: 1000px;
+}
+
+.public-heading{
+    color: darkorange;
+    font-size: 30px;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.public-form{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.public-input{
+    width: 80%;
+    height: 40px;
+    border: 0px;
+    background-color: #282822;
+    margin-left: 10px;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.public-input:hover{
+    background-color: darkgrey;
+    color: black;
+}
+
+.room-btn{
+    width: 100px;
+    font-size: 12px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: orangered;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.room-btn:hover{
+    background-color: #282822;
+    color: whitesmoke;
+}
+
+
+.all-rooms{
+    width: 80%;
+    min-height: 50px;
+    background-color: #282822;
+    border: 0px;
+    margin-top: 12px;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.all-room-names{
+    font-size: 20px;
+    width: 50%;
+    padding: 5px;
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #282822;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,39 @@
+.no-chatting-window{
+    background-color: #282828;
+    width: 80%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.no-chat{
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.chatting-window{
+    background-color: #282828;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: auto;
+    height: 40px;
+}
+
+.chatting-input{
+    width: 80%;
+    height: 30px;
+    align-self: center;
+    color: #282828;
+}

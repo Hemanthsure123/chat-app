@@ -11,3 +11,6 @@ ReadReceipt.belongsTo(User);
 ReadReceipt.belongsTo(Message);
 
 module.exports = ReadReceipt;
+
+
+

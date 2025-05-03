@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
+import './Navbar.css'
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
@@ -12,11 +13,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 p-4 text-white">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold">Chat App</Link>
+    <nav className="navigation-bar">
+      <div className="nav-items">
+        <Link to="/" className="chat-app-name">Nxt-Chat</Link>
         {user && (
-          <button onClick={handleLogout} className="bg-red-500 px-3 py-1 rounded">
+          <button onClick={handleLogout} className="log-out-button">
             Logout
           </button>
         )}

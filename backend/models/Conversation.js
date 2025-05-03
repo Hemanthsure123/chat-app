@@ -10,3 +10,6 @@ Conversation.belongsToMany(User, { through: 'ConversationUsers' });
 User.belongsToMany(Conversation, { through: 'ConversationUsers' });
 
 module.exports = Conversation;
+
+
+
